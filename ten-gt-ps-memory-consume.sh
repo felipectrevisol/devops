@@ -6,6 +6,7 @@ then
 fi
 
 persist_log_data() {
+    
     local ten_main_system_process=$(ps -e -o pid --sort -size | head -n 11 | grep [0-9])
     
     for process in $ten_main_system_process
